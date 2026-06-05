@@ -25,6 +25,9 @@ hiera::cmdpath:
 # Enable Package Inventory by default
 puppet_enterprise::profile::agent::package_inventory_enabled: true
 
+# added GITHUB Token
+puppet_enterprise::master::code_management::git_oauth_token: '/etc/puppetlabs/puppetserver/security/github_pat'
+
 # Add legacy facts and allow increased facts limits
 puppet_agent::config:
   - section: main
